@@ -1,5 +1,5 @@
-version: v1.0.0
-- steps:
+version: v1.1.0
+steps:
   - cmd: >
       docker manifest create
       {{.Run.Registry}}/envoy:1818
