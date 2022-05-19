@@ -2,8 +2,8 @@ version: v1.1.0
 steps:
   - cmd: >
       docker manifest create
-      {{.Run.Registry}}/envoy:1818
+      {{.Run.Registry}}/envoy:latest
       {{.Run.Registry}}/envoy:arm64
       {{.Run.Registry}}/envoy:amd64
-  - cmd: docker manifest push --purge {{.Run.Registry}}/envoy:1818
-  - cmd: docker manifest inspect {{.Run.Registry}}/envoy:1818
+  - cmd: docker manifest push --purge {{.Run.Registry}}/envoy:latest
+  - cmd: docker manifest inspect {{.Run.Registry}}/envoy:latest
